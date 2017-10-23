@@ -1,4 +1,4 @@
-class ConfirmationsController < Millia::ConfirmationsController
+class ConfirmationsController < Milia::ConfirmationsController
   
   def update
     if @confirmable.attempt_set_password(user_params)
