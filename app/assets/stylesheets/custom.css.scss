@@ -92,10 +92,18 @@
   padding-left: 0px;
   padding-right: 0px;
 }
-
 .no-left-padding{
   padding-left: 0px;
 }
 .no-right-padding{
   padding-right: 0px;
+}
+
+.table tr td {
+  a.main-link {
+    color: #428bca;
+  }
+  a.main-link:hover {
+  background: none;
+  }
 }
