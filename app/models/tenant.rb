@@ -7,7 +7,7 @@ class Tenant < ActiveRecord::Base
   accepts_nested_attributes_for :payment
   
   def can_create_projects?
-    (plan == 'free' && projects.count > 1) || (plan == 'premium')
+    (plan == 'free' && projects.count < 1) || (plan == 'premium')
   end
   validates_uniqueness_of :name
   validates_presence_of :name
